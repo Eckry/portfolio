@@ -1,0 +1,29 @@
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  padding: 16px;
+  border: 2px solid black;
+}
+
+
+.project-description{
+  margin: 16px 0;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-tech {
+  list-style: none;
+  gap: 16px;
+  display: flex;
+} 
+
+.project-image {
+  width: 300px;
+  aspect-ratio: 4 / 1;
+  background-color: black;
+}
