@@ -1,4 +1,11 @@
 .projects-title {
   text-align: center;
   font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
