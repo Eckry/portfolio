@@ -1,9 +1,12 @@
-import './App.css'
+import "./App.css";
+import Presentation from "./components/Presentation";
 
 function App() {
   return (
-      <h1>Hello!</h1>
-  )
+    <main className="main-container">
+      <Presentation />
+    </main>
+  );
 }
 
-export default App
+export default App;
