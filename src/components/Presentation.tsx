@@ -1,4 +1,5 @@
-import "./styles/Presentation.css"
+import { IconGithub, IconLinkedin } from "../icons";
+import "./styles/Presentation.css";
 
 export default function Presentation() {
   return (
@@ -6,23 +7,37 @@ export default function Presentation() {
       <div>
         <div>
           <h1 className="presentation-title">Hey! I'm Erick Torres</h1>
-          <h2 className="presentation-subtitle">A software developer</h2>
-          <p>A passionate physics engineer that found his love for coding!</p>
+          <h2 className="presentation-subtitle">
+            A <span className="highlight-1">software developer</span>
+          </h2>
+          <p className="presentation-p">
+            A passionate physics engineer that found his love for coding!
+          </p>
         </div>
-        <nav>
+        <nav className="presentation-nav">
+          <div className="presentation-available">
+            <span className="presentation-dot"></span>
+            <span>Available for work</span>
+          </div>
           <ul className="presentation-ul">
             <li>
-              <a href="https://github.com/Eckry" target="_blank">
-                Github
+              <a className="presentation-link" href="https://github.com/Eckry" target="_blank">
+                <IconGithub />
               </a>
             </li>
             <li>
-              <a href="">Linkdin</a>
+              <a className="presentation-link" href="">
+                <IconLinkedin />
+              </a>
             </li>
           </ul>
         </nav>
       </div>
-      <img className="presentation-image" src="https://vitejs.dev/logo-with-shadow.png" alt="me" />
+      <img
+        className="presentation-image"
+        src="https://vitejs.dev/logo-with-shadow.png"
+        alt="me"
+      />
     </section>
   );
 }

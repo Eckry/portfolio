@@ -1,9 +1,21 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #0c0a09;
+  --highlight: #FACC15; 
+  --white: rgb(227, 227, 227);
+  --gray: rgb(178, 178, 178);
+}
+
 body {
+  background-color: var(--primary);
   height: 100vh;
+  color: var(--white);
+  font-family: 'Onest Variable', sans-serif;
 }
