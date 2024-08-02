@@ -1,0 +1,14 @@
+.bentogrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-section{
+  padding: 16px;
+  border: 2px solid black;
+}
+
+.grid-section:nth-child(1) {
+  grid-column: 1 / -1;
+}
