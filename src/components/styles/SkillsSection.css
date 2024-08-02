@@ -1,0 +1,10 @@
+.skills-container {
+  margin: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.skills-article {
+  border: 2px solid black;
+  padding: 16px;
+}
