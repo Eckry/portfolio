@@ -1,5 +1,5 @@
 import "./styles/ProjectsSection.css";
-import projects from "../projects.json";
+import {projects} from "../consts.d";
 import Project from "./Project";
 
 export default function ProjectsSection() {
