@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import ContactMe from "./components/ContactMe";
 import Presentation from "./components/Presentation";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
@@ -11,6 +12,7 @@ function App() {
       <ProjectsSection />
       <SkillsSection />
       <About />
+      <ContactMe />
     </main>
   );
 }
