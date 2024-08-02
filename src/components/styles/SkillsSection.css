@@ -1,7 +1,10 @@
 .skills-container {
   margin: auto;
+}
+
+.skills-wrapper {
   display: flex;
-  gap: 32px;
+  gap: 16px;
 }
 
 .skills-article {
