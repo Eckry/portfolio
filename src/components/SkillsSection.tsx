@@ -5,7 +5,7 @@ import "./styles/SkillsSection.css";
 export default function SkillsSection() {
   return (
     <section className="skills-container">
-      <h1 className="section-title">Skills</h1>
+      <h1 id="skills" className="section-title">Skills</h1>
       <div className="skills-wrapper">
         <article className="skills-article">
           <h2>Frontend</h2>

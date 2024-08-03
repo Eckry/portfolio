@@ -3,7 +3,7 @@ import "./styles/About.css"
 export default function About() {
   return (
     <section>
-      <h1 className="section-title">More about me</h1>
+      <h1 id="about" className="section-title">More about me</h1>
       <div className="bentogrid">
         <div className="grid-section">
           <h2>Who am i?</h2>
