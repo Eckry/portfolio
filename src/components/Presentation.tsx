@@ -11,7 +11,7 @@ export default function Presentation() {
             A <span className="highlight-1">software developer</span>
           </h2>
           <p className="presentation-p">
-            A passionate physics engineer that found his love for coding!
+            I'm a passionate physics engineer that found his love for coding!
           </p>
         </div>
         <nav className="presentation-nav">

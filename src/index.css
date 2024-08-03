@@ -7,10 +7,11 @@
 }
 
 :root {
-  --primary: #0c0a09;
+  --primary: #040407;
   --highlight: #FACC15; 
   --white: rgb(227, 227, 227);
   --gray: rgb(178, 178, 178);
+  --black: #131313;
 }
 
 body {
