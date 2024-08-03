@@ -1,10 +1,20 @@
-.presentation-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .highlight-1 {
   color: var(--highlight);
+}
+
+.presentation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.presentation-image {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  background-color: var(--white);
+  border-radius: 50%;
 }
 
 .presentation-title {
@@ -13,7 +23,7 @@
 
 .presentation-subtitle {
   margin-top: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 64px;
   color: var(--gray);
   font-size: 32px;
 }
@@ -27,16 +37,28 @@
   list-style: none;
   display: flex;
   gap: 16px;
-  border-left: 2px solid var(--gray);
-  padding-left: 12px;
+}
+
+.presentation-line{
+  display: block;
+  background-color: var(--white);
+  height: 30px;
+  width: 1px;
 }
 
 .presentation-link {
+  border-radius: 8px;
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 8px;
+  transition: 0.25s;
+}
+
+.presentation-link:hover {
+  background-color: var(--black);
 }
 
 .tooltip {
@@ -58,19 +80,11 @@
   opacity: 1;
 }
 
-.presentation-image {
-  width: 200px;
-  height: 200px;
-  padding: 8px;
-  background-color: black;
-  border-radius: 50%;
-}
-
 .presentation-nav {
   display: flex;
   gap: 16px;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 32px;
 }
 
 .presentation-available {
