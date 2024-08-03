@@ -36,6 +36,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 150%;
+  padding: 4px 8px;
+  pointer-events: none;
+  font-size: 12px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  scale: 0.3;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.presentation-link:hover .tooltip {
+  scale: 1;
+  opacity: 1;
 }
 
 .presentation-image {

@@ -1,5 +1,14 @@
-import { IconGithub, IconLinkedin } from "../icons";
+import { social } from "../consts.d";
 import "./styles/Presentation.css";
+
+function Link({ link, name, Icon }: { link: string; name: string, Icon: () => JSX.Element }) {
+  return (
+    <a className="presentation-link" href={link} target="_blank">
+      <Icon />
+      <span className="tooltip">{name}</span>
+    </a>
+  );
+}
 
 export default function Presentation() {
   return (
@@ -20,16 +29,13 @@ export default function Presentation() {
             <span>Available for work</span>
           </div>
           <ul className="presentation-ul">
-            <li>
-              <a className="presentation-link" href="https://github.com/Eckry" target="_blank">
-                <IconGithub />
-              </a>
-            </li>
-            <li>
-              <a className="presentation-link" href="">
-                <IconLinkedin />
-              </a>
-            </li>
+            {social.map((network) => {
+              return (
+                <li key={network.name}>
+                  <Link {...network} />
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
