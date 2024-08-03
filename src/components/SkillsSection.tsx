@@ -10,13 +10,13 @@ export default function SkillsSection() {
         <article className="skills-article">
           <h2>Frontend</h2>
           {skills.backend.map((skill) => {
-            return <Skill {...skill} />;
+            return <Skill key={skill.name} {...skill} />;
           })}
         </article>
         <article className="skills-article">
           <h2>Backend</h2>
           {skills.frontend.map((skill) => {
-            return <Skill {...skill} />;
+            return <Skill key={skill.name} {...skill} />;
           })}
         </article>
       </div>

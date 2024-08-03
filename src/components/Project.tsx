@@ -23,7 +23,7 @@ export default function Project({
         <div className="project-icons">
           <ul className="project-tech">
             {tech.map((technology) => {
-              return <li>{technology}</li>;
+              return <li key={technology}>{technology}</li>;
             })}
           </ul>
           <a href={link}>Link</a>
