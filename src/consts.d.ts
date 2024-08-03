@@ -1,4 +1,4 @@
-import { IconGithub, IconLinkedin } from "./icons";
+import { IconCV, IconGithub, IconLinkedin } from "./icons";
 
 export const projects = [
   {
@@ -34,5 +34,10 @@ export const social = [
     name: "Linkedin",
     link: "",
     Icon: IconLinkedin,
+  },
+  {
+    name: "Resume",
+    link: "",
+    Icon: IconCV,
   },
 ];
