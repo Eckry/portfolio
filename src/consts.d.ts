@@ -1,3 +1,5 @@
+import { IconGithub, IconLinkedin } from "./icons";
+
 export const projects = [
   {
     name: "E-commerce",
@@ -21,3 +23,16 @@ export const skills = {
   backend: [{ name: "Express", icon: "" }],
   frontend: [{ name: "React", icon: "" }],
 };
+
+export const social = [
+  {
+    name: "Github",
+    link: "https://github.com/Eckry",
+    Icon: IconGithub,
+  },
+  {
+    name: "Linkedin",
+    link: "",
+    Icon: IconLinkedin,
+  },
+];
