@@ -18,12 +18,12 @@
   font-size: 32px;
 }
 
-.presentation-p{
+.presentation-p {
   font-size: 24px;
   color: var(--gray);
 }
 
-.presentation-ul{
+.presentation-ul {
   list-style: none;
   display: flex;
   gap: 16px;
@@ -31,7 +31,7 @@
   padding-left: 12px;
 }
 
-.presentation-link{
+.presentation-link {
   color: var(--white);
   display: flex;
   align-items: center;
@@ -46,27 +46,53 @@
   border-radius: 50%;
 }
 
-.presentation-nav{
+.presentation-nav {
   display: flex;
   gap: 16px;
   align-items: center;
-  padding: 16px;
+  margin-top: 16px;
 }
 
-.presentation-available{
+.presentation-available {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
   border: 1px solid var(--gray);
   padding: 8px 12px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
-.presentation-dot{
+.presentation-dot {
   display: block;
   border-radius: 50%;
   width: 10px;
   height: 10px;
   background-color: rgb(6, 255, 6);
+}
+
+.presentation-dot::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(6, 255, 6);
+  animation: 1s infinite linear pulse;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 0;
+    background-color: rgb(6, 255, 6);
+  }
+  50% {
+    scale: 1.5;
+    background-color: rgba(6, 255, 6, 0.249);
+  }
+
+  100% {
+    scale: 2.5;
+    background-color: rgba(6, 255, 6, 0);
+  }
 }
