@@ -5,7 +5,7 @@ interface Props {
   name: string;
   image: string;
   description: string;
-  tech: string[];
+  tech: { name: string; TechIcon: () => JSX.Element }[];
   link: string;
 }
 
@@ -24,7 +24,7 @@ export default function Project({
         <div className="project-icons">
           <ul className="project-tech">
             {tech.map((technology) => {
-              return <li key={technology}>{technology}</li>;
+              return <li className={`project-icon ${technology.name}`} key={technology.name}><technology.TechIcon /></li>;
             })}
           </ul>
           <a className="project-link" href={link}>
