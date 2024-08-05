@@ -12,3 +12,11 @@
   font-size: 32px;
   margin-bottom: 32px;
 }
+
+.React {
+  color: var(--blue-react);
+}
+
+.TypeScript {
+  color: var(--blue-typescript);
+}

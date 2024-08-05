@@ -12,6 +12,8 @@
   --white: rgb(227, 227, 227);
   --gray: rgb(178, 178, 178);
   --black: #131313;
+  --blue-react: #58C4DC;
+  --blue-typescript: #2F74C0;
 }
 
 body {
