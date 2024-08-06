@@ -14,8 +14,9 @@ export const projects = [
   {
     name: "E-commerce",
     image: "ecommerce.webp",
-    description:
-      "Pariatur elit occaecat eu sunt ea incididunt amet Lorem occaecat elit et amet pariatur sit. Proident Lorem duis dolore voluptate commodo. Velit et ex nulla labore aliquip ut eu qui dolore in aliqua ad. Mollit dolore et incididunt labore consectetur culpa esse incididunt consequat. Deserunt esse ullamco qui cillum sint magna consequat aliqua in amet.",
+    description: `This project is an e-commerce platform built with React and TypeScript for the frontend, and Express for the backend. It has =filters= based on various =categories=. The shopping cart feature has funcionalities of add, remove, and manage how many items does the user want. Each product has a dedicated page providing detailed information, images, and =reviews=. Also uses the MercadoPago API to manage the =checkout process= with =real payment=.
+
+With this project I focused on improving my =capacity to learn new technologies on my own=, without using tutorials or something like that, just reading documentation.`,
     tech: [
       {
         name: "TypeScript",

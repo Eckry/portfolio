@@ -18,9 +18,14 @@ export default function Project({
 }: Props) {
   return (
     <article className="project-container">
-      <div>
+      <div className="project-information-container">
         <h2 className="project-title">{name}</h2>
-        <p className="project-description">{description}</p>
+        <div>
+          {description.split("=").map((text, idx) => {
+            if (idx % 2) return <span className="text-highlight">{text}</span>;
+            return <p className="project-description">{text}</p>;
+          })}
+        </div>
         <div className="project-icons">
           <ul className="project-tech">
             {tech.map((technology) => {
