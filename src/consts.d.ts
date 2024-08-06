@@ -32,8 +32,9 @@ With this project I focused on improving my =capacity to learn new technologies 
   {
     name: "Sorted Symphony",
     image: "sortedsymphony.webp",
-    description:
-      "Pariatur elit occaecat eu sunt ea incididunt amet Lorem occaecat elit et amet pariatur sit. Proident Lorem duis dolore voluptate commodo. Velit et ex nulla labore aliquip ut eu qui dolore in aliqua ad. Mollit dolore et incididunt labore consectetur culpa esse incididunt consequat. Deserunt esse ullamco qui cillum sint magna consequat aliqua in amet.",
+    description: `Sorted Symphony is a =sorting algorithm= visualizer to make learning and understanding sorting algorithms fun. Each algorithm is shows its source code, allowing students to see the logic behind each sorting technique. It has a =musical tone=. The project also includes a tab called "Orchestra", where users can compare different algorithms side by side.
+
+With this project I achieved a deeper understanding of how =React render works=, and to =optimize= with useMemo and useCallback to improve the =performance= of the algorithm.`,
     tech: [
       {
         name: "TypeScript",
