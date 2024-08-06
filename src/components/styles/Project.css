@@ -27,7 +27,7 @@
   display: flex;
 }
 
-.project-icon{
+.project-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,11 +39,17 @@
   opacity: 1;
 }
 
-.project-link{
+.project-link {
   color: var(--highlight);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.project-link:hover {
+  color: var(--highlight-light);
+  scale: 1.2;
 }
 
 .project-image {

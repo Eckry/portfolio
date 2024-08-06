@@ -9,6 +9,7 @@
 :root {
   --primary: #040407;
   --highlight: #facc15;
+  --highlight-light: #ffe789;
   --white: rgb(227, 227, 227);
   --gray: rgb(178, 178, 178);
   --black: #131313;
