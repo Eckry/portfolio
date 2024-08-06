@@ -9,10 +9,14 @@
 
 .project-title {
   color: var(--highlight);
+  font-size: 32px;
 }
 
 .project-description {
   margin: 16px 0;
+  line-height: 32px;
+  font-size: 18px;
+  color: var(--gray);
 }
 
 .project-icons {
@@ -53,6 +57,6 @@
 }
 
 .project-image {
-  width: 300px;
+  width: 600px;
   border-radius: 12px;
 }

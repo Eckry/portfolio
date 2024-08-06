@@ -1,7 +1,6 @@
 .main-container {
   margin: 180px auto;
   width: 90%;
-  max-width: 900px;
   display: flex;
   flex-direction: column;
   gap: 256px;

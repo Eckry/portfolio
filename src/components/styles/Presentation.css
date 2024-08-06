@@ -1,3 +1,9 @@
+.presentation-container{
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+}
+
 .highlight-1 {
   color: var(--highlight);
 }
