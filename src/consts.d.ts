@@ -49,8 +49,9 @@ With this project I achieved a deeper understanding of how =React render works=,
   {
     name: "Urlsito",
     image: "urlsito.webp",
-    description:
-      "Pariatur elit occaecat eu sunt ea incididunt amet Lorem occaecat elit et amet pariatur sit. Proident Lorem duis dolore voluptate commodo. Velit et ex nulla labore aliquip ut eu qui dolore in aliqua ad. Mollit dolore et incididunt labore consectetur culpa esse incididunt consequat. Deserunt esse ullamco qui cillum sint magna consequat aliqua in amet.",
+    description: `Urlsito is a =URL shortener= application. Built with =SQLite= and =Turso database=. Each user has the capability to create and manage their own custom URL shorteners.
+
+With this project I focused on improve my understanding of =databases= and to implement them on my web. It was an interesting experience that allowed me to add databases to other projects I'm =currently building=.`,
     tech: [
       {
         name: "TypeScript",
