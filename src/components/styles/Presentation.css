@@ -64,7 +64,7 @@
 .tooltip {
   display: block;
   position: absolute;
-  top: 150%;
+  top: 130%;
   padding: 4px 8px;
   pointer-events: none;
   font-size: 12px;
@@ -73,6 +73,7 @@
   scale: 0.3;
   opacity: 0;
   transition: 0.25s;
+  background-color: var(--primary);
 }
 
 .presentation-link:hover .tooltip {
