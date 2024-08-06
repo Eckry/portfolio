@@ -7,6 +7,8 @@ interface Props {
   description: string;
   tech: { name: string; TechIcon: () => JSX.Element }[];
   link: string;
+  ProjectIcon: () => JSX.Element;
+  subtitle: string;
 }
 
 export default function Project({
@@ -15,11 +17,18 @@ export default function Project({
   description,
   tech,
   link,
+  ProjectIcon,
+  subtitle,
 }: Props) {
   return (
     <article className="project-container">
       <div className="project-information-container">
-        <h2 className="project-title">{name}</h2>
+        <header>
+          <h2 className="project-title">{name}</h2>
+          <h3 className="project-subtitle">
+            <ProjectIcon /> {subtitle}
+          </h3>
+        </header>
         <div>
           {description.split("=").map((text, idx) => {
             if (idx % 2) return <span className="text-highlight">{text}</span>;

@@ -18,6 +18,13 @@
   font-size: 32px;
 }
 
+.project-subtitle{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .project-description, .text-highlight {
   margin: 16px 0;
   line-height: 32px;

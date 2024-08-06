@@ -267,12 +267,7 @@ export function IconGit() {
 
 export function IconCSS() {
   return (
-    <svg
-      fill="none"
-      height="32"
-      width="32"
-      viewBox="0 0 124 141.53"
-    >
+    <svg fill="none" height="32" width="32" viewBox="0 0 124 141.53">
       <path
         d="M10.383 126.892L0 0l124 .255-10.979 126.637-50.553 14.638z"
         fill="#1b73ba"
@@ -282,6 +277,71 @@ export function IconCSS() {
         d="M100.851 27.064H22.298l2.128 15.318h37.276l-36.68 15.745 2.127 14.808h54.043l-1.958 20.68-18.298 3.575-16.595-4.255-1.277-11.745H27.83l2.042 24.426 32.681 9.106 31.32-9.957 4-47.745H64.765l36.085-14.978z"
         fill="#fff"
       />
+    </svg>
+  );
+}
+
+export function IconStore() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M3 21l18 0" />
+      <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+      <path d="M5 21l0 -10.15" />
+      <path d="M19 21l0 -10.15" />
+      <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+    </svg>
+  );
+}
+
+export function IconSort() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 6l7 0" />
+      <path d="M4 12l7 0" />
+      <path d="M4 18l9 0" />
+      <path d="M15 9l3 -3l3 3" />
+      <path d="M18 6l0 12" />
+    </svg>
+  );
+}
+
+export function IconLinkMinus() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 15l6 -6" />
+      <path d="M11 6l.463 -.536a5 5 0 1 1 7.071 7.072l-.534 .464" />
+      <path d="M12.603 18.534a5.07 5.07 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+      <path d="M16 19h6" />
     </svg>
   );
 }
