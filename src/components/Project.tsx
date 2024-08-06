@@ -35,7 +35,7 @@ export default function Project({
               );
             })}
           </ul>
-          <a className="project-link" href={link}>
+          <a className="project-link" target="_blank" href={link}>
             <IconLink />
           </a>
         </div>

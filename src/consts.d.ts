@@ -26,7 +26,7 @@ export const projects = [
       { name: "Git", TechIcon: IconGit },
       { name: "CSS", TechIcon: IconCSS },
     ],
-    link: "",
+    link: "https://store-app-pink.vercel.app/",
   },
   {
     name: "Sorted Symphony",
@@ -42,7 +42,7 @@ export const projects = [
       { name: "Git", TechIcon: IconGit },
       { name: "CSS", TechIcon: IconCSS },
     ],
-    link: "",
+    link: "https://sorted-symphony.vercel.app/",
   },
   {
     name: "Urlsito",
@@ -60,7 +60,7 @@ export const projects = [
       { name: "Git", TechIcon: IconGit },
       { name: "CSS", TechIcon: IconCSS },
     ],
-    link: "",
+    link: "https://urlsito.netlify.app/",
   },
 ];
 
