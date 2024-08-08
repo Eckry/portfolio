@@ -4,8 +4,11 @@ import {
   IconExpressjs,
   IconGit,
   IconGithub,
+  IconHTML,
+  IconJS,
   IconLinkedin,
   IconLinkMinus,
+  IconNode,
   IconReact,
   IconSort,
   IconSqlite,
@@ -76,10 +79,18 @@ With this project I focused on improve my understanding of =databases= and to im
   },
 ];
 
-export const skills = {
-  backend: [{ name: "Express", icon: "" }],
-  frontend: [{ name: "React", icon: "" }],
-};
+export const skills = [
+  { name: "React", Icon: IconReact },
+  { name: "Node.js", Icon: IconNode },
+  { name: "Express", Icon: IconExpressjs },
+  { name: "Git", Icon: IconGit },
+  { name: "SQLite", Icon: IconSqlite },
+  { name: "CSS", Icon: IconCSS },
+  { name: "TypeScript", Icon: IconTypeScript },
+  { name: "JavaScript", Icon: IconJS },
+  { name: "HTML", Icon: IconHTML },
+  { name: "GitHub", Icon: IconGithub },
+];
 
 export const social = [
   {

@@ -25,3 +25,8 @@ body {
   color: var(--white);
   font-family: "Onest Variable", sans-serif;
 }
+
+
+svg {
+  width: 32px;
+}

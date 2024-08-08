@@ -4,7 +4,7 @@ import ContactMe from "./components/ContactMe";
 import HeaderBar from "./components/HeaderBar";
 import Presentation from "./components/Presentation";
 import ProjectsSection from "./components/ProjectsSection";
-import SkillsSection from "./components/SkillsSection";
+import SkillsSection from "./components/Skills";
 
 function App() {
   return (

@@ -1,0 +1,21 @@
+.skills-container {
+  margin: auto;
+  width: 100%;
+}
+
+.skills-ul {
+  width: 80%;
+  margin: auto;
+  border: 2px solid var(--black);
+  border-radius: 12px;
+  padding: 32px 16px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  place-items: center;
+  row-gap: 64px;
+}
+
+.skills-ul svg {
+  width: 64px;
+}
