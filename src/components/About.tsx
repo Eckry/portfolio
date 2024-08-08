@@ -1,7 +1,45 @@
-import { IconAbout, IconGame, IconHouse, IconSchool } from "../icons";
+import {
+  IconAbout,
+  IconController,
+  IconGame,
+  IconHouse,
+  IconMexico,
+  IconSchool,
+  IconTV,
+  IconVS,
+} from "../icons";
 import "./styles/About.css";
 
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 export default function About() {
+  const date = new Date();
+  const utcTime = date.getTime() + date.getTimezoneOffset() * 60000;
+  const timeOffset = -6;
+  const mexicoTime = new Date(utcTime + 3600000 * timeOffset);
   return (
     <section className="about-container">
       <h1 id="about" className="section-title">
@@ -42,18 +80,42 @@ export default function About() {
             <IconGame />
             My hobbies
           </h2>
-          <p className="about-p"></p>
+          <p className="about-p">
+            In my free time, I enjoy playing video games, watching anime, and{" "}
+            <span className="about-highlight">competitive programming</span>.
+            Recently, I have been particularly interested in competitive
+            programming, participating in{" "}
+            <span className="about-highlight">ICPC</span> competitions and
+            aspiring to advance my skills to new heights.
+          </p>
+          <div className="about-icons">
+            <IconVS />
+            <IconController />
+            <IconTV />
+          </div>
         </div>
-        <div className="grid-section">
+        <div className="grid-section location">
           <h2 className="about-title">
             <IconHouse />
             Location
           </h2>
-          <p className="about-p">
-            Ipsum exercitation consectetur veniam minim nisi qui adipisicing
-            amet duis. Voluptate laborum irure incididunt tempor laboris
-            incididunt irure mollit dolor consequat voluptate esse irure
-            officia. Laboris proident ea veniam aliqua ex ea.
+          <h3 className="location-h3">
+            <IconMexico />
+            Mexico
+          </h3>
+          <span className="h-line"></span>
+          <p className="about-p location-p">
+            <span className="about-highlight time">
+              {mexicoTime.getHours()}:
+              {mexicoTime.getMinutes() > 9
+                ? mexicoTime.getMinutes()
+                : `0${mexicoTime.getMinutes()}`}
+            </span>{" "}
+            UTC-6
+          </p>
+          <p className="about-p location-p">
+            {days[mexicoTime.getDay()]}, {months[mexicoTime.getMonth()]}{" "}
+            {mexicoTime.getDate()}
           </p>
         </div>
         <div className="grid-section">
