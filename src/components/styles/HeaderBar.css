@@ -22,3 +22,7 @@
   gap: 8px;
   color: var(--gray);
 }
+
+.header-link svg {
+  width: 16px;
+}
