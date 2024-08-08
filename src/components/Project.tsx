@@ -31,8 +31,8 @@ export default function Project({
         </header>
         <div>
           {description.split("=").map((text, idx) => {
-            if (idx % 2) return <span className="text-highlight">{text}</span>;
-            return <p className="project-description">{text}</p>;
+            if (idx % 2) return <span key={idx} className="text-highlight">{text}</span>;
+            return <p key={idx} className="project-description">{text}</p>;
           })}
         </div>
         <div className="project-icons">
