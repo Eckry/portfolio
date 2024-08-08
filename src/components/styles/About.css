@@ -20,10 +20,18 @@
   gap: 16px;
 }
 
-.about-p {
+.about-p,
+.about-highlight {
   font-size: 18px;
   color: var(--gray);
   line-height: 32px;
+  display: inline;
+  white-space: pre-wrap;
+  text-wrap: pretty;
+}
+
+.about-highlight {
+  color: var(--highlight);
 }
 
 .grid-section {
