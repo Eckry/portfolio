@@ -109,11 +109,3 @@ export const social = [
     Icon: IconCV,
   },
 ];
-
-export const aboutTexts = {
-  who: `I am a 21-year-old passionate =problem solver= who has been fascinated by puzzles and challenges since childhood. My curiosity led me to watch science communicators on YouTube, especially those about =physics= and =mathematics=. This early interest led me to pursue a degree in =Physical Engineering=, driven by a desire to tackle complex physical problems and discover the mysteries of the universe.
-
-During my studies, I discovered =programming=. Initially, I started learning to code on my own without any intention of seeking employment. However, as I learned more and more. I realized that my skills could lead me to a =fulfilling career=, so I embarked on a mission to apply my knowledge and secure a job in the tech industry.`,
-  hobbies: ``,
-  education: ``,
-};

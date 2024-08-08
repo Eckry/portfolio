@@ -1,4 +1,3 @@
-import { aboutTexts } from "../consts.d";
 import { IconAbout, IconGame, IconHouse, IconSchool } from "../icons";
 import "./styles/About.css";
 
@@ -14,23 +13,36 @@ export default function About() {
             <IconAbout />
             Who am i?
           </h2>
-          {aboutTexts.who.split("=").map((text, idx) => {
-            if (idx % 2) return <span className="about-highlight">{text}</span>;
-            return <p className="about-p">{text}</p>;
-          })}
+          <p className="about-p">
+            I am a 21-year-old passionate{" "}
+            <span className="about-highlight">problem solver</span> who has been
+            fascinated by puzzles and challenges since childhood. My curiosity
+            led me to watch science communicators on YouTube, especially those
+            about <span className="about-highlight">physics</span> and{" "}
+            <span className="about-highlight">mathematics</span>. This early
+            interest led me to pursue a degree in{" "}
+            <span className="about-highlight">Physical Engineering</span>,
+            driven by a desire to tackle complex physical problems and discover
+            the mysteries of the universe.
+          </p>
+          <br />
+          <p className="about-p">
+            During my studies, I discovered{" "}
+            <span className="about-highlight">programming</span>. Initially, I
+            started learning to code on my own without any intention of seeking
+            employment. However, as I learned more and more. I realized that my
+            skills could lead me to a{" "}
+            <span className="about-highlight">fulfilling career</span>, so I
+            embarked on a mission to apply my knowledge and secure a job in the
+            tech industry.
+          </p>
         </div>
         <div className="grid-section">
           <h2 className="about-title">
             <IconGame />
             My hobbies
           </h2>
-          <p className="about-p">
-            {aboutTexts.hobbies.split("=").map((text, idx) => {
-              if (idx % 2)
-                return <span className="about-highlight">{text}</span>;
-              return <p className="about-p">{text}</p>;
-            })}
-          </p>
+          <p className="about-p"></p>
         </div>
         <div className="grid-section">
           <h2 className="about-title">
@@ -49,13 +61,7 @@ export default function About() {
             <IconSchool />
             Education
           </h2>
-          <p className="about-p">
-            {aboutTexts.education.split("=").map((text, idx) => {
-              if (idx % 2)
-                return <span className="about-highlight">{text}</span>;
-              return <p className="about-p">{text}</p>;
-            })}
-          </p>
+          <p className="about-p"></p>
         </div>
       </div>
     </section>
