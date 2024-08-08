@@ -73,8 +73,6 @@ export function IconFolder() {
 export function IconAbout() {
   return (
     <svg
-      width="16"
-      height="16"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
       stroke="currentColor"
