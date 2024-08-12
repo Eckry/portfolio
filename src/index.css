@@ -10,6 +10,8 @@
   --primary: #040407;
   --highlight: #facc15;
   --highlight-light: #ffe789;
+  --green: rgb(82, 255, 186);
+  --dark-green: rgb(32, 101, 73);
   --white: rgb(227, 227, 227);
   --gray: rgb(178, 178, 178);
   --black: #131313;
@@ -25,7 +27,6 @@ body {
   color: var(--white);
   font-family: "Onest Variable", sans-serif;
 }
-
 
 svg {
   width: 32px;
