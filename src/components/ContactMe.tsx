@@ -1,10 +1,27 @@
+import { useRef, useState } from "react";
 import { email } from "../consts.d";
-import { IconCopy, IconExternalLink } from "../icons";
+import { IconCheck, IconCopy, IconExternalLink } from "../icons";
 import "./styles/ContactMe.css";
 
 export default function ContactMe() {
+  const [copied, setCopied] = useState(false);
+  const timeoutRef = useRef<number | null>(null);
+
   function copyEmail() {
-    navigator.clipboard.writeText(email);
+    navigator.clipboard
+      .writeText(email)
+      .then(() => {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+        setCopied(true);
+
+        timeoutRef.current = setTimeout(() => {
+          setCopied(false);
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   function sendEmail() {
@@ -20,6 +37,7 @@ export default function ContactMe() {
         <p className="contact-email">{email}</p>
         <button onClick={copyEmail}>
           <IconCopy />
+          {copied && <IconCheck />}
         </button>
         <button onClick={sendEmail}>
           <IconExternalLink />
