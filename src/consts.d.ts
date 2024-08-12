@@ -109,3 +109,5 @@ export const social = [
     Icon: IconCV,
   },
 ];
+
+export const email = "ericktorresagui@gmail.com"
