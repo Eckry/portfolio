@@ -42,9 +42,12 @@ export default function About() {
   const mexicoTime = new Date(utcTime + 3600000 * timeOffset);
   return (
     <section className="about-container">
-      <h1 id="about" className="section-title">
-        More about me
-      </h1>
+      <header className="title-header">
+        <h1 id="about" className="section-title">
+          <span className="title-number">02.</span> More about me
+        </h1>
+        <span className="title-line"></span>
+      </header>
       <div className="bentogrid">
         <div className="grid-section">
           <h2 className="about-title">

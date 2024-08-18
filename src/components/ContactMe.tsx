@@ -30,9 +30,12 @@ export default function ContactMe() {
 
   return (
     <section className="contact-container">
-      <h1 id="contact" className="section-title">
-        Contact me!
-      </h1>
+      <header className="title-header">
+        <h1 id="contact" className="section-title">
+          <span className="title-number">03.</span> Contact me!
+        </h1>
+        <span className="title-line"></span>
+      </header>
       <div className="contact-buttons">
         <p className="contact-email">{email}</p>
         <button onClick={copyEmail}>
