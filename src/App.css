@@ -6,6 +6,16 @@
   gap: 256px;
 }
 
+#tsparticles {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  position: absolute;
+  z-index: -1;
+}
+
 .section-title {
   text-align: center;
   font-size: 32px;
