@@ -16,10 +16,28 @@
   z-index: -1;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 32px;
+.title-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 32px;
+  gap: 24px;
+}
+
+.section-title {
+  font-size: 32px;
+  position: relative;
+  text-wrap: nowrap;
+}
+
+.title-line {
+  width: 100%;
+  background-color: var(--black);
+  height: 2px;
+}
+
+.title-number {
+  color: var(--gray);
 }
 
 .React {
