@@ -35,6 +35,12 @@
   }
 }
 
+.contact-p{
+  text-align: center;
+  margin-top: 32px;
+  font-size: 18px;
+}
+
 .check {
   position: absolute;
   color: var(--green);

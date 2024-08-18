@@ -46,6 +46,9 @@ export default function ContactMe() {
           <IconExternalLink />
         </button>
       </div>
+      <p className="contact-p">
+        I will get back to you <span className="text-highlight">as soon as possible</span>
+      </p>
     </section>
   );
 }
