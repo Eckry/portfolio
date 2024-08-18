@@ -123,7 +123,18 @@ export default function About() {
             <IconSchool />
             Education
           </h2>
-          <p className="about-p"></p>
+          <p className="about-p">
+            I am a self-taught programmer who began learning to code on
+            <span className="about-highlight"> freeCodeCamp.org</span>. There, I
+            learned{" "}
+            <span className="about-highlight">JavaScript, CSS, and HTML</span>,
+            as well as algorithms and data structures. Today, I learn by reading
+            documentation for the tools I use and by building projects that are
+            useful for me. For now, my objective is to learn{" "}
+            <span className="about-highlight">Astro</span>,{" "}
+            <span className="about-highlight">React Native</span>,{" "}
+            <span className="about-highlight">and Python</span>
+          </p>
         </div>
       </div>
     </section>
