@@ -1,13 +1,11 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { email } from "../consts.d";
-import { IconCheck, IconCopy, IconExternalLink } from "../icons";
+import { IconCopy, IconExternalLink } from "../icons";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadStarsPreset } from "@tsparticles/preset-stars";
 import "./styles/ContactMe.css";
 
 export default function ContactMe() {
-  const [copied, setCopied] = useState(false);
-  const timeoutRef = useRef<number | null>(null);
   const [init, setInit] = useState(false);
 
   const options = useMemo(
@@ -25,20 +23,7 @@ export default function ContactMe() {
   );
 
   function copyEmail() {
-    navigator.clipboard
-      .writeText(email)
-      .then(() => {
-        if (timeoutRef.current) clearTimeout(timeoutRef.current);
-
-        setCopied(true);
-
-        timeoutRef.current = setTimeout(() => {
-          setCopied(false);
-        }, 2000);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    navigator.clipboard.writeText(email);
   }
 
   function sendEmail() {
@@ -68,7 +53,6 @@ export default function ContactMe() {
         </div>
         <button onClick={copyEmail}>
           <IconCopy />
-          {copied && <IconCheck />}
         </button>
         <button onClick={sendEmail}>
           <IconExternalLink />

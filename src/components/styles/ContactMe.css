@@ -31,10 +31,15 @@
     background-color: transparent;
     color: var(--highlight);
     cursor: pointer;
-    transition: 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out, scale 0.1s ease-in-out;
 
     &:hover {
-      scale: 1.1;
+      background-color: var(--black);
+    }
+
+    &:active {
+      scale: 0.9;
+      color: var(--highlight-light);
     }
   }
 }
@@ -60,33 +65,3 @@
   z-index: -1;
 }
 
-.check {
-  position: absolute;
-  color: var(--green);
-  left: 20%;
-  bottom: -70%;
-  animation: 0.25s ease-in-out check;
-
-  width: 24px;
-  height: 24px;
-}
-
-@keyframes check {
-  0% {
-    scale: 0.7;
-  }
-
-  33% {
-    transform: rotate(-20deg);
-  }
-
-  66% {
-    scale: 1.1;
-    transform: rotate(20deg);
-  }
-
-  100% {
-    scale: 1;
-    transform: rotate(0deg);
-  }
-}
