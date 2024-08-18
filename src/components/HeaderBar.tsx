@@ -1,4 +1,4 @@
-import { IconAbout, IconContact, IconFolder, IconSkills } from "../icons";
+import { IconAbout, IconContact, IconFolder } from "../icons";
 import "./styles/HeaderBar.css";
 
 export default function HeaderBar() {
@@ -12,10 +12,7 @@ export default function HeaderBar() {
           <a className="header-link" href="#about"><IconAbout /> About</a>
         </li>
         <li>
-          <a className="header-link" href="#skills"><IconSkills /> Skills</a>
-        </li>
-        <li>
-          <a className="header-link" href="#contact"><IconContact /> Contact me</a>
+          <a className="header-link" href="#contact"><IconContact /> Contact</a>
         </li>
       </ul>
     </header>
