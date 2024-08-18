@@ -4,10 +4,14 @@
 }
 
 .contact-email {
-  border: 2px solid var(--black);
+  border: 1px solid var(--highlight);
   border-radius: 8px;
   font-size: 20px;
   padding: 8px 16px;
+  position: relative;
+  z-index: 1;
+  background-color: var(--primary);
+  box-shadow: 0 0 100px -15px var(--highlight);
 }
 
 .contact-buttons {
@@ -35,10 +39,25 @@
   }
 }
 
-.contact-p{
+.contact-p {
   text-align: center;
   margin-top: 32px;
   font-size: 18px;
+}
+
+
+.relative {
+  position: relative;
+}
+
+#tsparticles2 {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .check {
