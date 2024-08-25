@@ -1,4 +1,4 @@
-.presentation-container{
+.presentation-container {
   margin: auto;
   width: 90%;
   max-width: 900px;
@@ -45,7 +45,7 @@
   gap: 16px;
 }
 
-.presentation-line{
+.presentation-line {
   display: block;
   background-color: var(--white);
   height: 30px;
@@ -135,5 +135,35 @@
   100% {
     scale: 2.5;
     background-color: rgba(6, 255, 6, 0);
+  }
+}
+
+@media (width <= 900px) {
+  .presentation-header {
+    flex-direction: column-reverse;
+    align-items: initial;
+    gap: 50px;
+  }
+
+  .presentation-image {
+    margin: auto;
+  }
+
+  .presentation-title {
+    font-size: clamp(24px, 8vw, 52px);
+  }
+
+  .presentation-subtitle {
+    font-size: clamp(20px, 6vw, 32px);
+  }
+}
+
+@media (width <= 550px) {
+  .presentation-nav {
+    flex-direction: column;
+  }
+
+  .presentation-line {
+    display: none;
   }
 }
