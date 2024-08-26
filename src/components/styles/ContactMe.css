@@ -1,6 +1,7 @@
 .contact-container {
   margin-bottom: 50px;
   margin-top: -150px;
+  overflow: hidden;
 }
 
 .contact-email {
@@ -51,7 +52,6 @@
   font-size: 18px;
 }
 
-
 .relative {
   position: relative;
 }
@@ -72,7 +72,7 @@
   justify-content: center;
 }
 
-@media (width <= 500px){
+@media (width <= 500px) {
   .contact-buttons {
     flex-direction: column;
   }

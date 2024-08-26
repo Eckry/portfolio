@@ -56,3 +56,9 @@
 .Git {
   color: var(--orange-git);
 }
+
+@media (width <= 1100px) {
+  #tsparticles {
+    width: 100%;
+  }
+}
