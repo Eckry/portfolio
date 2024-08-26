@@ -51,12 +51,14 @@ export default function ContactMe() {
           {init && <Particles id="tsparticles2" options={options} />}
           <p className="contact-email">{email}</p>
         </div>
-        <button onClick={copyEmail}>
-          <IconCopy />
-        </button>
-        <button onClick={sendEmail}>
-          <IconExternalLink />
-        </button>
+        <div className="flex">
+          <button onClick={copyEmail}>
+            <IconCopy />
+          </button>
+          <button onClick={sendEmail}>
+            <IconExternalLink />
+          </button>
+        </div>
       </div>
       <p className="contact-p">
         I will get back to you{" "}

@@ -12,6 +12,7 @@
   z-index: 1;
   background-color: var(--primary);
   box-shadow: 0 0 100px -15px var(--highlight);
+  text-align: center;
 }
 
 .contact-buttons {
@@ -65,3 +66,14 @@
   z-index: -1;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width <= 500px){
+  .contact-buttons {
+    flex-direction: column;
+  }
+}
