@@ -31,8 +31,17 @@ export default function Project({
         </header>
         <div>
           {description.split("=").map((text, idx) => {
-            if (idx % 2) return <span key={idx} className="text-highlight">{text}</span>;
-            return <p key={idx} className="project-description">{text}</p>;
+            if (idx % 2)
+              return (
+                <span key={idx} className="text-highlight">
+                  {text}
+                </span>
+              );
+            return (
+              <p key={idx} className="project-description">
+                {text}
+              </p>
+            );
           })}
         </div>
         <div className="project-icons">
@@ -54,7 +63,9 @@ export default function Project({
           </a>
         </div>
       </div>
-      <img className="project-image" src={image} alt={`${name} image`} />
+      <div className="image-container">
+        <img className="project-image" src={image} alt={`${name} image`} />
+      </div>
     </article>
   );
 }
