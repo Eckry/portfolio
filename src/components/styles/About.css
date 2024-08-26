@@ -90,3 +90,27 @@
   height: 1px;
   background-color: var(--gray);
 }
+
+@media (width <= 1400px) {
+  .about-container {
+    width: 100%;
+  }
+}
+
+@media (width <= 1100px) {
+  .bentogrid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-section:nth-child(1) {
+    grid-column: initial;
+  }
+
+  .grid-section:nth-child(4) {
+    grid-column: initial;
+  }
+
+  .about-icons {
+    margin-top: 32px;
+  }
+}
