@@ -9,37 +9,9 @@ import {
   IconVS,
 } from "../icons";
 import "./styles/About.css";
-
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+import Timer from "./Timer";
 
 export default function About() {
-  const date = new Date();
-  const utcTime = date.getTime() + date.getTimezoneOffset() * 60000;
-  const timeOffset = -6;
-  const mexicoTime = new Date(utcTime + 3600000 * timeOffset);
   return (
     <section className="about-container">
       <header className="title-header">
@@ -107,19 +79,7 @@ export default function About() {
             Mexico
           </h3>
           <span className="h-line"></span>
-          <p className="about-p location-p">
-            <span className="about-highlight time">
-              {mexicoTime.getHours()}:
-              {mexicoTime.getMinutes() > 9
-                ? mexicoTime.getMinutes()
-                : `0${mexicoTime.getMinutes()}`}
-            </span>{" "}
-            UTC-6
-          </p>
-          <p className="about-p location-p">
-            {days[mexicoTime.getDay()]}, {months[mexicoTime.getMonth()]}{" "}
-            {mexicoTime.getDate()}
-          </p>
+          <Timer />
         </div>
         <div className="grid-section">
           <h2 className="about-title">
