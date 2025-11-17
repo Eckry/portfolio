@@ -100,7 +100,7 @@ export const social = [
   },
   {
     name: "Linkedin",
-    link: "",
+    link: "https://www.linkedin.com/in/erick-torres-aguirre-a53bab381/",
     Icon: IconLinkedin,
   },
   {
