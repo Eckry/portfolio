@@ -30,7 +30,7 @@ export default function Presentation() {
         </div>
         <img
           className="presentation-image"
-          src="https://vitejs.dev/logo-with-shadow.png"
+          src="me.webp"
           alt="me"
         />
       </header>
