@@ -105,7 +105,7 @@ export const social = [
   },
   {
     name: "Resume",
-    link: "",
+    link: "/CV.pdf",
     Icon: IconCV,
   },
 ];
