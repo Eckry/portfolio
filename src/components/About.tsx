@@ -27,7 +27,7 @@ export default function About() {
             Who am i?
           </h2>
           <p className="about-p">
-            I am a 21-year-old passionate{" "}
+            I am a 22-year-old passionate{" "}
             <span className="about-highlight">problem solver</span> who has been
             fascinated by puzzles and challenges since childhood. My curiosity
             led me to watch science communicators on YouTube, especially those
